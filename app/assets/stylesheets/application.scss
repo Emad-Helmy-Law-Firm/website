@@ -38,14 +38,18 @@ button:focus {
 
 @font-face {
   font-family: "Plantin";
-  src: font-url("Plantin.ttf") format("truetype"),
-    font-url("Plantin.otf") format("opentype");
-  font-weight: roman;
+  src: font-url("Plantin.eot");
+  src: font-url("Plantin.eot?#iefix") format("embedded-opentype"),
+    font-url("Plantin.woff2") format("woff2"),
+    font-url("Plantin.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Plantin";
-  src: font-url("PlantinBold.ttf") format("truetype"),
-    font-url("Plantin-Bold.otf") format("opentype");
+  src: font-url("Plantin-Bold.eot");
+  src: font-url("Plantin-Bold.eot?#iefix") format("embedded-opentype"),
+    font-url("Plantin-Bold.woff2") format("woff2"),
+    font-url("Plantin-Bold.woff") format("woff");
   font-weight: bold;
 }
