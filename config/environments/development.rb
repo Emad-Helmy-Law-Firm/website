@@ -68,13 +68,4 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   # config.action_mailer.asset_host = ""
 
-  config.action_mailer.smtp_settings = {
-    :user_name => '52ac1b08fddf2d',
-    :password => '6749b2071cf507',
-    :address => 'smtp.mailtrap.io',
-    :domain => 'smtp.mailtrap.io',
-    :port => '2525',
-    :authentication => :cram_md5
-  }
-
 end
