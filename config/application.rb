@@ -29,8 +29,8 @@ module RriStaffing
     # the framework and any gems in your application.
 
     config.time_zone = 'Cairo'
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)$/
+    # config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    # config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)$/
     config.autoload_paths += %W(#{config.root}/lib) # add this line
     config.generators.javascript_engine = :js
     I18n.default_locale = :en
