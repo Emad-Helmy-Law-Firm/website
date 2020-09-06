@@ -36,7 +36,7 @@ module RriStaffing
     I18n.default_locale = :en
     I18n.available_locales = [:en]
     config.i18n.fallbacks = [I18n.default_locale]
-    config.active_job.queue_adapter = :delayed_job
+    # config.active_job.queue_adapter = :delayed_job
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
