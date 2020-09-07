@@ -5,6 +5,11 @@
 $color-base: #1c1c1c;
 $color-maroon: #45251f;
 
+nav {
+  top: 0;
+  z-index: 1000;
+}
+
 .bg-main {
   background-color: $color-base;
 }
@@ -18,10 +23,14 @@ $color-maroon: #45251f;
 }
 
 .nav-item {
-  text-transform: capitalize !important;
+  text-transform: lowercase !important;
   color: white;
   margin-right: 70px;
-  font-size: 0.75rem;
+  font-size: 11px;
+}
+
+.nav-item:last-child {
+  margin-right: 66px;
 }
 
 .nav-item:hover {
@@ -37,11 +46,14 @@ $color-maroon: #45251f;
 }
 
 #banner-text {
-  font-size: 1.2rem;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
-#banner-text1 {
+#div-banner-text1 {
   margin-top: 27px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .div-area {
@@ -57,7 +69,7 @@ $color-maroon: #45251f;
 }
 
 .text-area {
-  font-size: 0.75rem;
+  font-size: 13px;
   padding-top: 4px;
   padding-bottom: 4px;
   width: 217px;
@@ -73,6 +85,7 @@ $color-maroon: #45251f;
 
 #div-about-us-text > span {
   font-size: 13px;
+  line-height: 23px;
 }
 
 #div-about-us-text > span:first-child {
@@ -85,12 +98,12 @@ $color-maroon: #45251f;
 }
 
 #label-about {
-  font-size: 1.3rem;
-  letter-spacing: 15px;
+  font-size: 24px;
+  letter-spacing: 9px;
 }
 
 #img-person {
-  margin-top: -75px;
+  margin-top: -50px;
 }
 
 #img-20 {
@@ -98,15 +111,33 @@ $color-maroon: #45251f;
   bottom: -67px;
 }
 
+#label-services {
+  font-size: 24px;
+  letter-spacing: 9px;
+  font-weight: bold;
+  color: #2b0d0d;
+}
+
 .div-service {
   width: calc(100% - 40px);
 }
 
 span.div-area {
+  height: 35px;
   font-size: 17px;
   font-weight: bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 27px;
 }
 
 .service-description {
   font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.service-description:first-child {
+  letter-spacing: -0.1px;
 }

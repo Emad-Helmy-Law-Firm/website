@@ -1,10 +1,10 @@
 /* ###### 9.6 Padding   ###### */
 
-@mixin padding-variant($num, $viewport: '') {
-  @if $viewport == '' {
-    $viewport: '-';
+@mixin padding-variant($num, $viewport: "") {
+  @if $viewport == "" {
+    $viewport: "-";
   } @else {
-    $viewport: '-' + $viewport + '-';
+    $viewport: "-" + $viewport + "-";
   }
 
   //ie. .pd-sm-0
@@ -133,29 +133,30 @@ $num: 100;
 }
 
 @media (min-width: 480px) {
-  @include do-padding-variant('xs');
+  @include do-padding-variant("xs");
 }
 
 @include media-breakpoint-up(sm) {
-  @include do-padding-variant('sm');
+  @include do-padding-variant("sm");
 }
 
 @include media-breakpoint-up(md) {
-  @include do-padding-variant('md');
+  @include do-padding-variant("md");
 }
 
 @include media-breakpoint-up(lg) {
-  @include do-padding-variant('lg');
+  @include do-padding-variant("lg");
 }
 
 @include media-breakpoint-up(xl) {
-  @include do-padding-variant('xl');
+  @include do-padding-variant("xl");
 }
 
 @include media-breakpoint-up(xxl) {
-  @include do-padding-variant('xxl');
+  @include do-padding-variant("xxl");
 }
 
 // Custom Padding
 @include padding-variant(12);
 @include padding-variant(13);
+@include padding-variant(17);
