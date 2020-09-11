@@ -2,142 +2,233 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "lib/slick";
+
 $color-base: #1c1c1c;
 $color-maroon: #45251f;
+$color-dark: #2B0D0D;
 
 nav {
-  top: 0;
-  z-index: 1000;
+    top: 0;
+    z-index: 1000;
+}
+
+.d-grid {
+    display: grid;
 }
 
 .bg-main {
-  background-color: $color-base;
+    background-color: $color-base;
 }
 
 .bg-maroon {
-  background-color: $color-maroon;
+    background-color: $color-maroon;
 }
 
 .white-space-pre-wrap {
-  white-space: pre-wrap;
+    white-space: pre-wrap;
+}
+
+.font-weight-italic {
+    font-family: "PlantinItalic";
+}
+
+.font-weight-bold-italic {
+    font-family: "PlantinBoldItalic";
+}
+
+.line-height-23 {
+    line-height: 23px;
 }
 
 .nav-item {
-  text-transform: lowercase !important;
-  color: white;
-  margin-right: 70px;
-  font-size: 11px;
-}
-
-.nav-item:last-child {
-  margin-right: 66px;
+    text-transform: lowercase !important;
+    color: white;
+    margin-right: 70px;
+    font-size: 13px;
 }
 
 .nav-item:hover {
-  color: white;
+    color: white;
 }
 
 .banner {
-  margin-top: 28px;
+    padding-top: 28px;
 }
 
 #div-banner-home {
-  top: 55px;
+    top: 55px;
 }
 
 #banner-text {
-  font-size: 18px;
-  letter-spacing: 0.5px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 #div-banner-text1 {
-  margin-top: 27px;
-  font-size: 13px;
-  line-height: 20px;
+    margin-top: 27px;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .div-area {
-  background-color: $color-maroon;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
+    background-color: $color-maroon;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .div-area.home:not(:last-child) {
-  margin-right: 23px;
+    margin-right: 23px;
+}
+
+.label {
+    letter-spacing: 27px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .text-area {
-  font-size: 13px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  width: 217px;
-  text-transform: capitalize !important;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 217px;
+    text-transform: capitalize !important;
+}
+
+#banner-wood {
+    height: 760px;
 }
 
 #div-about-us-text {
-  margin-top: 140px;
-  margin-left: 130px;
-  margin-right: 130px;
-  margin-bottom: 50px;
+    margin-top: 140px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 50px;
+    color: $color-base;
 }
 
 #div-about-us-text > span {
-  font-size: 13px;
-  line-height: 23px;
+    font-size: 13px;
 }
 
 #div-about-us-text > span:first-child {
-  margin-right: 61px;
+    margin-right: 61px;
 }
 
 #div-banner-about,
 #div-banner-services {
-  top: 80px;
-}
-
-#label-about {
-  font-size: 24px;
-  letter-spacing: 9px;
+    top: 80px;
 }
 
 #img-person {
-  margin-top: -50px;
+    margin-top: -50px;
 }
 
 #img-20 {
-  right: -40px;
-  bottom: -67px;
+    right: -40px;
+    bottom: -67px;
 }
 
-#label-services {
-  font-size: 24px;
-  letter-spacing: 9px;
-  font-weight: bold;
-  color: #2b0d0d;
+#label-services,
+#label-clients,
+#label-testimonials {
+    color: $color-dark;
 }
 
 .div-service {
-  width: calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+
+.div-service-last {
+    width: calc(100% - 34px);
+}
+
+.div-service,
+.div-service-last {
+    filter: drop-shadow(6px 6px 9px rgba(0, 0, 0, 0.161));
 }
 
 span.div-area {
-  height: 35px;
-  font-size: 17px;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  margin-top: 27px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 27px;
 }
 
 .service-description {
-  font-size: 12px;
-  line-height: 22px;
-  text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-base;
 }
 
-.service-description:first-child {
-  letter-spacing: -0.1px;
+#legal-consultancy-text {
+    letter-spacing: -0.1px;
+}
+
+#text-clients {
+    font-size: 12px;
+    color: $color-base;
+}
+
+#div-banner-testimonials,
+#div-banner-contact {
+    top: 0px;
+}
+
+.label-contact-info {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.text-contact-info {
+    text-align: center;
+    color: $color-base;
+    font-size: 13px;
+}
+
+#div-working-hours {
+    font-size: 13px;
+}
+
+.quote {
+    font-size: 101px;
+    color: $color-dark;
+    line-height: 145px;
+    height: 60px;
+}
+
+#div-quote-end {
+    transform: rotate(180deg);
+}
+
+.div-testimonial {
+    font-size: 12px;
+    line-height: 23px;
+}
+
+#div-banner-testimonials {
+    height: inherit;
+}
+
+#arrow-left {
+    border-radius: 50%;
+    margin-right: 13.6%;
+}
+
+#arrow-right {
+    border-radius: 50%;
+    margin-left: 13.6%;
+}
+
+#arrow-left > img, #arrow-right > img {
+    width: 16px;
+    height: 32px;
 }

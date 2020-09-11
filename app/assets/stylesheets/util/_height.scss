@@ -2,215 +2,245 @@
 
 //height mixin
 @mixin make-height($num, $viewport: "") {
-  $p: $num + "%";
+    $p: $num + "%";
 
-  @if $viewport == "" {
-    $viewport: "-";
-  } @else {
-    $viewport: "-" + $viewport + "-";
-  }
+    @if $viewport == "" {
+        $viewport: "-";
+    }
+    @else {
+        $viewport: "-" + $viewport + "-";
+    }
 
-  .ht#{$viewport}#{$num} {
-    height: #{$num}px;
-  }
+    .ht#{$viewport}#{$num} {
+        height: #{$num}px;
+    }
 
-  .ht#{$viewport}#{$num}p {
-    height: #{$p};
-  }
+    .ht#{$viewport}#{$num}p {
+        height: #{$p};
+    }
 
-  .mx-ht#{$viewport}#{$num}p {
-    max-height: #{$p};
-  }
+    .mx-ht#{$viewport}#{$num}p {
+        max-height: #{$p};
+    }
 
-  .mn-ht#{$viewport}#{$num}p {
-    min-height: #{$p};
-  }
+    .mn-ht#{$viewport}#{$num}p {
+        min-height: #{$p};
+    }
 
-  .ht#{$viewport}#{$num}-f {
-    height: #{$num}px !important;
-  }
+    .ht#{$viewport}#{$num}-f {
+        height: #{$num}px !important;
+    }
 
-  .ht#{$viewport}#{$num}p-f {
-    height: #{$p} !important;
-  }
+    .ht#{$viewport}#{$num}p-f {
+        height: #{$p} !important;
+    }
 }
 
 @mixin do-make-height($viewport) {
-  $num: 5;
+    $num: 5;
 
-  @while $num <= 100 {
-    @include make-height($num, $viewport);
+    @while $num <= 100 {
+        @include make-height($num, $viewport);
 
-    $num: $num + 5;
-  }
+        $num: $num + 5;
+    }
 }
 
 @mixin do-make-height-lg($viewport) {
-  $num: 150;
+    $num: 150;
 
-  @while $num <= 850 {
-    @include make-height($num, $viewport);
+    @while $num <= 850 {
+        @include make-height($num, $viewport);
 
-    $num: $num + 50;
-  }
+        $num: $num + 50;
+    }
 }
 
 $num: 5;
 
 @while $num <= 100 {
-  @include make-height($num);
+    @include make-height($num);
 
-  $num: $num + 5;
+    $num: $num + 5;
 }
 
 //height: 100px to 800px with step of 50px
 $num: 150;
 
 @while $num < 850 {
-  .ht-#{$num} {
-    height: #{$num}px;
-  }
+    .ht-#{$num} {
+        height: #{$num}px;
+    }
 
-  .mn-ht-#{$num} {
-    min-height: #{$num}px;
-  }
+    .mn-ht-#{$num} {
+        min-height: #{$num}px;
+    }
 
-  $num: $num + 50;
+    $num: $num + 50;
 }
 
 // viewport height
 .ht-100v {
-  height: 100vh;
+    height: 100vh;
 }
 
 .mn-ht-0 {
-  min-height: inherit;
+    min-height: inherit;
 }
 
 .mn-ht-100v {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 //custom heights
 .ht-1 {
-  height: 1px;
+    height: 1px;
 }
 
 .ht-2 {
-  height: 2px;
+    height: 2px;
 }
 
 .ht-3 {
-  height: 3px;
+    height: 3px;
 }
 
 .ht-4 {
-  height: 4px;
+    height: 4px;
 }
 
 .ht-6 {
-  height: 6px;
+    height: 6px;
 }
 
 .ht-7 {
-  height: 7px;
+    height: 7px;
 }
 
 .ht-8 {
-  height: 8px;
+    height: 8px;
 }
 
 .ht-9 {
-  height: 9px;
+    height: 9px;
 }
 
 .ht-auto {
-  height: auto;
+    height: auto;
 }
 
 .ht-base {
-  height: 38px;
+    height: 38px;
 }
 
 .ht-135 {
-  height: 135px;
+    height: 135px;
 }
 
 // media queries
 @media (min-width: 480px) {
-  @include do-make-height("xs");
-  @include do-make-height-lg("xs");
+    @include do-make-height("xs");
+    @include do-make-height-lg("xs");
 
-  .ht-xs-100v {
-    height: 100vh;
-  }
+    .ht-xs-100v {
+        height: 100vh;
+    }
 }
 
 @include media-breakpoint-up(sm) {
-  @include do-make-height("sm");
-  @include do-make-height-lg("sm");
+    @include do-make-height("sm");
+    @include do-make-height-lg("sm");
 
-  .ht-sm-100v {
-    height: 100vh;
-  }
+    .ht-sm-100v {
+        height: 100vh;
+    }
 }
+
 
 @include media-breakpoint-up(md) {
-  @include do-make-height("md");
-  @include do-make-height-lg("md");
+    @include do-make-height("md");
+    @include do-make-height-lg("md");
 
-  .ht-md-100v {
-    height: 100vh;
-  }
+    .ht-md-100v {
+        height: 100vh;
+    }
 }
+
 
 @include media-breakpoint-up(lg) {
-  @include do-make-height("lg");
-  @include do-make-height-lg("lg");
+    @include do-make-height("lg");
+    @include do-make-height-lg("lg");
 
-  .ht-lg-100v {
-    height: 100vh;
-  }
+    .ht-lg-100v {
+        height: 100vh;
+    }
 }
+
 
 @include media-breakpoint-up(xl) {
-  @include do-make-height("xl");
-  @include do-make-height-lg("xl");
+    @include do-make-height("xl");
+    @include do-make-height-lg("xl");
 
-  .ht-xl-100v {
-    height: 100vh;
-  }
+    .ht-xl-100v {
+        height: 100vh;
+    }
 }
+
 
 @include media-breakpoint-up(xxl) {
-  @include do-make-height("xxl");
-  @include do-make-height-lg("xxl");
+    @include do-make-height("xxl");
+    @include do-make-height-lg("xxl");
 
-  .ht-xxl-100v {
-    height: 100vh;
-  }
+    .ht-xxl-100v {
+        height: 100vh;
+    }
 }
 
+
 .ht-33 {
-  height: 33px;
+    height: 33px;
 }
 
 .ht-45 {
-  height: 45px;
+    height: 45px;
+}
+
+.ht-62 {
+    height: 62px;
+}
+
+.ht-95 {
+    height: 95px;
 }
 
 .ht-152 {
-  height: 152px;
+    height: 152px;
 }
 
 .ht-360 {
-  height: 360px;
+    height: 360px;
+}
+
+.ht-390 {
+    height: 390px;
 }
 
 .ht-394 {
-  height: 394px;
+    height: 394px;
+}
+
+.ht-456 {
+    height: 456px;
 }
 
 .ht-530 {
-  height: 530px;
+    height: 530px;
+}
+
+.ht-525 {
+    height: 525px;
+}
+
+.ht-731 {
+    height: 731px;
 }

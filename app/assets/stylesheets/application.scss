@@ -20,11 +20,11 @@
 
 html,
 body {
-  color: $black;
+    color: $black;
 }
 
 body {
-  font-family: "Plantin";
+    font-family: "Plantin";
 }
 
 input:focus,
@@ -32,24 +32,37 @@ select:focus,
 .form-control:focus,
 textarea:focus,
 button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#footer-text {
+    font-size: 10px;
+    margin-left: -142px;
 }
 
 @font-face {
-  font-family: "Plantin";
-  src: font-url("Plantin.eot");
-  src: font-url("Plantin.eot?#iefix") format("embedded-opentype"),
-    font-url("Plantin.woff2") format("woff2"),
-    font-url("Plantin.woff") format("woff");
-  font-weight: normal;
+    font-family: "Plantin";
+    src: font-url("Plantin.eot");
+    src: font-url("Plantin.eot?#iefix") format("embedded-opentype"), font-url("Plantin.woff2") format("woff2"), font-url("Plantin.woff") format("woff");
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: "Plantin";
-  src: font-url("Plantin-Bold.eot");
-  src: font-url("Plantin-Bold.eot?#iefix") format("embedded-opentype"),
-    font-url("Plantin-Bold.woff2") format("woff2"),
-    font-url("Plantin-Bold.woff") format("woff");
-  font-weight: bold;
+    font-family: "Plantin";
+    src: font-url("Plantin-Bold.eot");
+    src: font-url("Plantin-Bold.eot?#iefix") format("embedded-opentype"), font-url("Plantin-Bold.woff2") format("woff2"), font-url("Plantin-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PlantinItalic";
+    src: font-url("Aldine721BT-Italic.eot");
+    src: font-url("Aldine721BT-Italic.eot?#iefix") format("embedded-opentype"), font-url("Aldine721BT-Italic.woff2") format("woff2"), font-url("Aldine721BT-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PlantinBoldItalic";
+    src: font-url("Plantin-BoldItalic.eot");
+    src: font-url("Plantin-BoldItalic.eot?#iefix") format("embedded-opentype"), font-url("Plantin-BoldItalic.woff2") format("woff2"), font-url("Plantin-BoldItalic.woff") format("woff");
 }
