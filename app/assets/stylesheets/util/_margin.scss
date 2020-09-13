@@ -227,15 +227,15 @@ $num: 100;
 
 
 // Custom Margin
-@include margin-variant(130);
-@include margin-variant(139);
-@include margin-variant(38);
-@include margin-variant(27);
-@include margin-variant(29);
-@include margin-variant(51);
-@include margin-variant(68);
-@include margin-variant(34);
-@include margin-variant(91);
-@include margin-variant(33);
-@include margin-variant(127);
-@include margin-variant(57);
+@include margin-variant(130, "md");
+@include margin-variant(139, "md");
+@include margin-variant(38, "md");
+@include margin-variant(27, "md");
+@include margin-variant(29, "md");
+@include margin-variant(51, "md");
+@include margin-variant(68, "md");
+@include margin-variant(34, "md");
+@include margin-variant(91, "md");
+@include margin-variant(33, "md");
+@include margin-variant(127, "md");
+@include margin-variant(57, "md");

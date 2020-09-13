@@ -163,7 +163,7 @@ $num: 100;
 
 
 // Custom Padding
-@include padding-variant(12);
-@include padding-variant(13);
-@include padding-variant(17);
-@include padding-variant(114);
+@include padding-variant(12, "md");
+@include padding-variant(13, "md");
+@include padding-variant(17, "md");
+@include padding-variant(114, "md");

@@ -13,10 +13,6 @@ nav {
     z-index: 1000;
 }
 
-.d-grid {
-    display: grid;
-}
-
 .bg-main {
     background-color: $color-base;
 }
@@ -231,4 +227,76 @@ span.div-area {
 #arrow-left > img, #arrow-right > img {
     width: 16px;
     height: 32px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding-top: 10px;
+    }
+
+    #logo {
+        width: 161px !important;
+    }
+
+    #banner-text {
+        font-size: 16px;
+    }
+
+    .div-area.home {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+        margin-top: 12px !important;
+    }
+
+    .text-area {
+        width: 100%;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    #banner-wood {
+        height: 720px;
+    }
+
+    #div-banner-about {
+        top: 40px;
+    }
+
+    #div-banner-services {
+        top: 120px;
+    }
+
+    #div-about {
+        height: 514px;
+        margin-top: 82px;
+    }
+
+    #div-about-us-text {
+        margin-top: 125px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #div-about-us-text > span:first-child {
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+
+    #img-20 {
+        right: calc(50% - 100px);
+        bottom: -170px;
+        z-index: 1000;
+    }
+
+    #div-services {
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+
+    .div-service {
+        width: 100%;
+        height: auto;
+    }
 }
