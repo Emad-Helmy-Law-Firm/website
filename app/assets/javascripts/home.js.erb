@@ -5,6 +5,8 @@
 //= require lib/slick
 
 $(document).ready(function(){
+  $("#services").height($("#div-banner-services").height() + 180)
+
   $("#div-testimonials").on('init', function(event, slick) {
     $("#testimonials").height($(".slick-active").height() + 191 + 91)
     $("#div-testimonials").height($(".slick-active").height() + 191)
