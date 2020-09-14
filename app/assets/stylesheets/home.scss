@@ -254,9 +254,13 @@ span.div-area {
 }
 
 @media (max-width: 1400px) {
+    #intellectual-property,
     .smaller-font {
         margin-left: 0px !important;
         margin-right: 0px !important;
+    }
+
+    .smaller-font {
         font-size: 0.9rem !important;
     }
 }
