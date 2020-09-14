@@ -6,7 +6,8 @@
 
 $(document).ready(function(){
   $("#div-testimonials").on('init', function(event, slick) {
-    $("#testimonials, #div-testimonials").height($(".slick-active").height() + 191)
+    $("#testimonials").height($(".slick-active").height() + 191 + 91)
+    $("#div-testimonials").height($(".slick-active").height() + 191)
     $(".slick-arrow").height($(".slick-active").height() - 91)
   })
   

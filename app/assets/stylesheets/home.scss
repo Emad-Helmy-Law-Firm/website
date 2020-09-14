@@ -147,20 +147,23 @@ nav {
 }
 
 span.div-area {
-    height: 35px;
+    min-height: 35px;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     margin-top: 27px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .service-description {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     text-align: center;
     color: $color-base;
+    padding-bottom: 20px;
 }
 
 #legal-consultancy-text {
@@ -168,7 +171,7 @@ span.div-area {
 }
 
 #text-clients {
-    font-size: 12px;
+    font-size: 14px;
     color: $color-base;
 }
 
@@ -205,8 +208,12 @@ span.div-area {
     transform: rotate(180deg);
 }
 
+#div-testimonials {
+    width: 60%;
+}
+
 .div-testimonial {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 23px;
 }
 
@@ -214,19 +221,37 @@ span.div-area {
     height: inherit;
 }
 
-#arrow-left {
+#arrow-left,
+#arrow-right {
+    min-width: 62px;
     border-radius: 50%;
-    margin-right: 13.6%;
+}
+
+#arrow-left {
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 #arrow-right {
-    border-radius: 50%;
-    margin-left: 13.6%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 #arrow-left > img, #arrow-right > img {
     width: 16px;
     height: 32px;
+}
+
+@media (min-width: 1401px) {
+    .smaller-font {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .smaller-font {
+        font-size: 0.8rem !important;
+    }
 }
 
 @media (max-width: 768px) {

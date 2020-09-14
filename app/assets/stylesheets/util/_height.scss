@@ -222,7 +222,7 @@ $num: 150;
 }
 
 .ht-390 {
-    height: 390px;
+    min-height: 390px;
 }
 
 .ht-394 {
@@ -233,8 +233,12 @@ $num: 150;
     height: 456px;
 }
 
+.ht-470 {
+    height: 470px;
+}
+
 .ht-530 {
-    height: 530px;
+    min-height: 530px;
 }
 
 .ht-525 {
