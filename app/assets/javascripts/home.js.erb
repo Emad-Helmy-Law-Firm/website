@@ -4,7 +4,13 @@
 
 //= require lib/slick
 
-$(document).ready(function(){
+$(document).ready(function() {
+  $("#sidebarCollapse, #div-sidemenu-inner > .nav-item").click(function() {
+    $("#sidemenu").toggleClass("d-none")
+    $("#div-body-content").toggleClass("d-none")
+    $("footer").toggleClass("d-none")
+  })
+
   $("#services").height($("#div-banner-services").height() + 180)
 
   $("#div-testimonials").on('init', function(event, slick) {
