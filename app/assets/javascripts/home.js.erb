@@ -8,7 +8,12 @@ $(document).ready(function(){
   $("#services").height($("#div-banner-services").height() + 180)
 
   $("#div-testimonials").on('init', function(event, slick) {
-    $("#testimonials").height($(".slick-active").height() + 191 + 91)
+    if (window.screen.width <= 768) {
+      $("#testimonials").height($(".slick-active").height() + 100)
+    } else {
+      $("#testimonials").height($(".slick-active").height() + 191 + 91)
+    }
+    
     $("#div-testimonials").height($(".slick-active").height() + 191)
     $(".slick-arrow").height($(".slick-active").height() - 91)
   })
