@@ -277,6 +277,10 @@ span.div-area {
 }
 
 @media (max-width: 768px) {
+    .smaller-font-mobile {
+        font-size: 1rem !important;
+    }
+
     #home {
         height: 710px;
     }
@@ -359,10 +363,14 @@ span.div-area {
     }
 
     span.div-area {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 25px !important;
+        margin-right: 25px !important;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+
+    span.div-area.second {
+        margin-top: 10px;
     }
 
     #text-clients {
@@ -413,5 +421,42 @@ span.div-area {
         margin-left: 13px;
         margin-right: 13px;
         white-space: pre-line;
+    }
+
+    #contact {
+        margin-top: 8px;
+        margin-bottom: 38px;
+    }
+
+    #div-contact {
+        margin-top: 34px;
+        margin-left: 54px;
+        margin-right: 54px;
+        padding-top: 14px;
+        height: 594px;
+    }
+
+    .label-contact-info {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #div-working-hours {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    footer > div {
+        justify-content: space-between !important;
+    }
+
+    #footer-text {
+        width: auto !important;
+        font-size: 7px;
     }
 }
