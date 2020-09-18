@@ -29,6 +29,10 @@ nav {
     white-space: pre-wrap;
 }
 
+.white-space-pre {
+    white-space: pre;
+}
+
 .font-weight-italic {
     font-family: "PlantinItalic";
 }
@@ -278,6 +282,10 @@ span.div-area {
 }
 
 @media (max-width: 768px) {
+    .white-space-pre {
+        white-space: normal;
+    }
+
     #sidemenu {
         height: 100vh !important;
         opacity: 0.8;
@@ -285,8 +293,8 @@ span.div-area {
     }
 
     #div-sidemenu-inner {
-        margin-left: 65px;
-        margin-right: 65px;
+        margin-left: auto;
+        margin-right: auto;
         width: 286px;
         height: 401px;
         padding-top: 55px;
