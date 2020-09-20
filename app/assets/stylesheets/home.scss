@@ -45,6 +45,10 @@ nav {
     line-height: 23px;
 }
 
+.height-fit {
+    height: fit-content !important;
+}
+
 .nav-item {
     text-transform: lowercase !important;
     color: white;
@@ -257,13 +261,13 @@ span.div-area {
     height: 32px;
 }
 
-@media (min-width: 1401px) {
+@media screen and (min-width: 1401px) {
     .smaller-font {
         font-size: 16px !important;
     }
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     #intellectual-property,
     .smaller-font {
         margin-left: 0px !important;
@@ -281,7 +285,7 @@ span.div-area {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .white-space-pre {
         white-space: normal;
     }
@@ -318,10 +322,6 @@ span.div-area {
 
     .smaller-font-mobile {
         font-size: 1rem !important;
-    }
-
-    #home {
-        height: 710px;
     }
 
     .banner {
@@ -365,7 +365,7 @@ span.div-area {
     }
 
     #div-about {
-        height: 514px;
+        height: auto;
         margin-top: 82px;
     }
 
@@ -498,5 +498,12 @@ span.div-area {
     #footer-text {
         width: auto !important;
         font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .div-area.home {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
     }
 }

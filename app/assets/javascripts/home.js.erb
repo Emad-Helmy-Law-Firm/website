@@ -13,6 +13,11 @@ $(document).ready(function() {
 
   $("#services").height($("#div-banner-services").height() + 180)
 
+  if (window.screen.width <= 768) {
+    $("#home").height($("#div-banner-home").height() + 110)
+    $("#about").height($("#div-banner-about").height() + 110)
+  }
+
   $("#div-testimonials").on('init', function(event, slick) {
     if (window.screen.width <= 768) {
       $("#testimonials").height($(".slick-active").height() + 100)
@@ -26,8 +31,7 @@ $(document).ready(function() {
   
   slick = $('#div-testimonials').slick({
     arrows: false
-  })
-  .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
     $("#testimonials, #div-testimonials, .slick-arrow").height($("div").find(`[data-slick-index='${nextSlide}']`).height() + 191)
   });
 
