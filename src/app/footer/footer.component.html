@@ -1,0 +1,72 @@
+<div class="footer web">
+  <div class="threeCols">
+    <div class="firstCol">
+      <img src="./assets/logo.png" class="logo" />
+      <p>
+        With every case handled, we ensure that the team serving a client
+        includes the “grey haired” experienced counsels, as well as those
+        efficient and energetic “next generation” associates. Emad Helmy Said
+        Law Firm has significant experience in enforcing foreign judgments in
+        Egypt, with an acknowledged ability to pursue enforcement through using
+        all available tools.
+      </p>
+    </div>
+
+    <div class="secCol">
+      <h3>What we do</h3>
+      <div class="servicesList">
+        <div>
+          <div *ngFor="let service of services; let i = index">
+            <a *ngIf="i%2!=0">
+              {{service}}
+            </a>
+          </div>
+        </div>
+        <div class="rightList">
+          <div *ngFor="let service of services; let i = index">
+            <a *ngIf="i%2==0">
+              {{service}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdCol">
+      <div style="display: flex; flex-direction: column; align-items: flex-end;">
+        <h3>Get in touch</h3>
+        <a href="mailto:emad@emadlawfirm.com">emad@emadlawfirm.com</a>
+        <a href="tel:+201224661050">+201224661050</a>
+      </div>
+      <div class="bottomLinks">
+        <a routerLink="/aboutUs">About</a>
+        <a routerLink="/services">Our services</a>
+        <a routerLink="/ourTeam">Our Team</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile">
+  <div class="mobile-column">
+    <div>
+      <img src="./assets/logo.png" class="logo" />
+      <p>
+        With every case handled, we ensure that the team serving a client
+        includes the “grey haired” experienced counsels, as well as those
+        efficient and energetic “next generation” associates. Emad Helmy Said
+        Law Firm has significant experience in enforcing foreign judgments in
+        Egypt, with an acknowledged ability to pursue enforcement through using
+        all available tools.
+      </p>
+    </div>
+
+    <div class="horizontalLine"></div>
+
+    <div style="text-align: center;">
+      <h3>Get in touch</h3>
+      <a href="mailto:emad@emadlawfirm.com">emad@emadlawfirm.com</a>
+      <a href="tel:+201224661050">+201224661050</a>
+    </div>
+  </div>
+</div>

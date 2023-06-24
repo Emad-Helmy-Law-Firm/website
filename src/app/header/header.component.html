@@ -1,0 +1,62 @@
+<div class="header">
+  <img src="./assets/logo.png" class="logo" (click)="navigateHome()" />
+
+  <div class="item">
+    <a class="headerBtn" routerLink="/">Home</a>
+  </div>
+  <div class="item">
+    <a class="headerBtn" routerLink="/services">Services</a>
+  </div>
+  <div class="item">
+    <a class="headerBtn" routerLink="/ourTeam">Our Team</a>
+  </div>
+  <div class="item">
+    <a class="headerBtn" routerLink="/aboutUs">About Us</a>
+  </div>
+  <div class="item">
+    <a class="headerBtn" routerLink="/emadHelmy">Emad Helmy</a>
+  </div>
+  <div class="burgerAndContact">
+    <div class="bordered item">
+      <a class="headerBtn" (click)="navigateToSection()">Contact Now</a>
+    </div>
+    <div class="mobile">
+      <img
+        id="mobileMenuBtn"
+        src="assets/mobileMenuBtn.png"
+        alt="Mobile Menu Button"
+        (click)="showMobileMenu()"
+        [style.display]="mobileMenuVisible ? 'none' : 'inline'"
+      />
+      <img
+        id="mobileMenuBtn"
+        src="assets/mobileMenuBtn.png"
+        alt="Mobile Menu Button"
+        (click)="hideMobileMenu()"
+        [style.display]="mobileMenuVisible ? 'inline' : 'none'"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- <div [style.display]="mobileMenuVisible? 'inline' : 'none'">
+  <div id="mobileMenu">
+    <a class="headerBtn" routerLink="/">Home</a>
+    <a class="headerBtn" routerLink="/services">Services</a>
+    <a class="headerBtn" routerLink="/ourTeam">Our Team</a>
+    <a class="headerBtn" routerLink="/aboutUs">About Us</a>
+  </div>
+</div> -->
+
+<div id="mobile_menu" [style.display]="mobileMenuVisible ? 'flex' : 'none'">
+  <div class="menu_card">
+    <!-- <div id="exit_button">
+    </div> -->
+    <fa-icon [icon]="faCircleXmark" (click)="hideMobileMenu()" id="exit-btn"></fa-icon>
+    <a class="headerBtn" routerLink="/">Home</a>
+    <a class="headerBtn" routerLink="/services">Services</a>
+    <a class="headerBtn" routerLink="/ourTeam">Our Team</a>
+    <a class="headerBtn" routerLink="/aboutUs">About Us</a>
+    <a class="headerBtn" routerLink="/emadHelmy">Emad Helmy</a>
+  </div>
+</div>

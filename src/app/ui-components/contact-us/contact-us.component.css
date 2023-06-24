@@ -1,0 +1,132 @@
+.contactUs {
+  width: 100vw;
+  height: 60vh;
+  background-color: var(--secondaryButtonColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: var(--custom_width);
+  min-width: var(--custom_min_width);
+  height: 80%;
+  border: 2px white solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  min-width: 35vw;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.buttonOne {
+  /* margin-right: 80px; */
+}
+
+#btn1 {
+  border-radius: 50px;
+  text-align: center;
+  color: var(--secondaryButtonColor);
+  background-color: var(--primaryButtonColor);
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  padding: 12px 32px;
+  border: solid;
+  font-size: 20px;
+}
+
+#btn1 a {
+  color: var(--secondaryButtonColor);
+}
+
+#btn1:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+#btn2 {
+  border-radius: 50px;
+  text-align: center;
+  color: var(--primaryButtonColor);
+  background-color: var(--secondaryButtonColor);
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  padding: 12px 32px;
+  border: 1px solid;
+  font-size: 20px;
+}
+
+#btn2 a {
+  color: var(--primaryButtonColor);
+}
+
+#btn2:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+a {
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contactUs {
+    height: auto;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 25px;
+    /* flex-grow: 1; */
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  a {
+    font-size: 0.7em;
+  }
+
+  .buttonOne {
+    margin-bottom: 10px;
+  }
+
+  .box {
+    height: auto;
+    padding: 15px;
+    margin: 20px;
+  }
+
+  button {
+    width: 60%;
+    height: 5vh;
+    font-size: 0.6em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}

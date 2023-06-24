@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body, html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 100;
+    overflow-x: hidden;
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --custom_width: 80vw;
+    --custom_min_width: 300px;
+    --primaryButtonColor: #E8D7CA;
+    --secondaryButtonColor: #442c1b;
+    --blue_accent: #2A4E68;
+    --max_width: 1500px;
+}
+
+.web {
+    display: inline;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile {
+        display: inline;
+    }
+
+    .web {
+        display: none;
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Times New Roman', Times, serif; }

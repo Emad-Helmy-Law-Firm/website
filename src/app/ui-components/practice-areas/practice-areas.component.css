@@ -1,0 +1,95 @@
+.custom_row {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: 0; */
+    /* padding: 0; */
+    display: flex;
+    overflow-x: visible;
+    /* scroll-behavior: smooth; */
+    /* scrollbar-width: none; */
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondaryButtonColor);
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 143.02%;
+}
+
+/* .custom_row::-webkit-scrollbar {
+    display: none;
+} */
+
+/* app-service-card {
+    flex: 0 0 auto;
+} */
+
+.custom_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.transform-left {
+    translate: transform(-800px, 0);
+}
+
+.ltr {
+    animation: ltrAnimation 20s infinite linear;
+}
+
+.ltr:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ltrAnimation {
+    0% {
+        transform: translate(-120vw, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+
+    /* 100% {
+        transform: translate(0,0)
+    } */
+}
+
+.rtl {
+    direction: rtl;
+    animation: rtlAnimation 20s infinite linear;
+}
+
+.rtl:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rtlAnimation {
+    0% {
+        transform: translate(100vw, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .custom_container {
+        height: 100vh;
+    }
+}
