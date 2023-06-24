@@ -1,0 +1,168 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 70vw; */
+  width: var(--custom_width);
+  min-width: var(--custom_min_width);
+}
+
+.logo {
+  height: 55px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 162.52%;
+  /* or 33px */
+
+  text-align: center;
+
+  /* Pure White */
+
+  color: #ffffff;
+}
+
+.headerBtn {
+  text-decoration: none;
+  color: white;
+}
+
+.headerBtn:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.bordered {
+  border: 2px;
+  border-radius: 2px;
+  border-color: #ffffff;
+  border-style: solid;
+  padding: 8px;
+}
+
+.bordered:hover {
+  border-color: grey;
+  cursor: pointer;
+}
+
+.bordered:hover .headerBtn {
+  color: grey;
+}
+
+#mobileMenuBtn {
+  display: none;
+}
+
+#mobileMenu {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    display: inline;
+  }
+  .header {
+    height: auto;
+    /* width: 100%; */
+    margin: 0;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .item {
+    visibility: hidden;
+    display: none;
+  }
+
+  .bordered {
+    visibility: visible;
+    display: inline;
+    width: 90%;
+    font-size: 0.7em;
+  }
+
+  #mobileMenuBtn {
+    display: inline;
+    width: 20px;
+    margin-left: 20px;
+  }
+
+  .headerBtn {
+    width: auto;
+  }
+
+  #mobile_menu {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.506);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .menu_card {
+    width: 60%;
+    height: 45%;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    /* padding: 60px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    color: black;
+  }
+
+  .menu_card a {
+    color: black;
+    position: relative;
+  }
+
+  #exit-btn {
+    /* width: 100%; */
+    /* padding: 0 10px; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    position:absolute;
+    top: 29vh;
+    right: 24vw;
+  }
+  .burgerAndContact{
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,197 @@
+.custom_div {
+  width: 100vw;
+  height: auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.custom_container {
+  background: var(--secondaryButtonColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+}
+
+.grey_area {
+  width: 45%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 68, 42, 0.1);
+  padding: 15% 10%;
+  color: var(--secondaryButtonColor);
+}
+
+h1 {
+  font-size: 4.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nonGrey {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.quest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  animation: moveUp;
+}
+
+h4 {
+  color: var(--secondaryButtonColor);
+  font-weight: 500;
+  font-size: 1.5vw;
+  display: flex;
+  align-self: flex-start;
+  width: 95%;
+}
+
+fa-icon {
+  color: var(--blue_accent);
+  left: 100%;
+}
+
+.horLine {
+  margin: 5px 0 5px 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 2px;
+  width: 50%;
+}
+
+.answer {
+  width: 75%;
+  margin-top: 0;
+  align-self: center;
+  justify-self: center;
+  color: var(--secondaryButtonColor);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  opacity: 0.5;
+  animation: moveDown 0.5s linear both;
+}
+
+@keyframes moveDown {
+  0% {
+    visibility: hidden;
+    height: 0;
+  }
+  50% {
+    visibility: hidden;
+    height: 50%;
+    opacity: 0;
+  }
+  75% {
+    visibility: visible;
+    height: 75%;
+    opacity: 0.2;
+  }
+  100% {
+    visibility: visible;
+    height: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    visibility: visible;
+    height: 100%;
+  }
+  50% {
+    visibility: visible;
+    height: 75%;
+    opacity: 0.2;
+  }
+  75% {
+    visibility: hidden;
+    height: 50%;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.web {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+  height: 90vh;
+  background-color: rgba(104, 68, 42, 0.1);
+  padding-top: 35vh;
+}
+
+@media screen and (max-width: 768px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    height: auto;
+    width: 60%;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .custom_div {
+    height: fit-content;
+    min-height: 90vh;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .grey_area {
+    width: 100%;
+    padding: 2vw;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .nonGrey {
+    width: auto;
+    min-width: 55%;
+    margin: 20px 0;
+  }
+  fa-icon{
+    margin-left: 1vw;
+  }
+
+  .answer {
+    width: 90%;
+  }
+}

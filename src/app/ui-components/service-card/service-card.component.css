@@ -1,0 +1,72 @@
+.custom_card {
+    /* margin-left: 2.5vw;
+    margin-right: 2.5vw; */
+    /* min-width: 300px; */
+    /* max-width: 60%; */
+    /* min-height: 300px; */
+    /* max-width: 80vw; */
+    min-height: 28vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    /* background-color: rgb(248, 247, 216); */
+    /* background-image: url('/assets/litigation_background.webp'); */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+}
+
+.custom_card:hover p {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    /* color: #00000090; */
+}
+
+h1 {
+    color: white;
+    margin-top: 0;
+    max-height: 5%;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2em;
+    /* font-size: 3.4vw; */
+    /* margin-bottom: 5px; */
+}
+
+p {
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 10px;
+    color: white;
+    display: none;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+    direction: ltr;
+}
+
+@media screen and (max-width: 768px) {
+    .custom_card {
+        min-height: 20vh;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 0.85em;
+        margin:0;
+        margin-bottom: 5px;
+        white-space:normal;
+    }
+
+    p {
+        font-size: 0.55em;
+        /* font-size: xx-small; */
+        max-width: 100%;
+    }
+}

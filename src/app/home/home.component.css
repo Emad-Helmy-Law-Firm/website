@@ -1,0 +1,310 @@
+#center_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.advocacyCentre {
+  padding-top: 0;
+  /* background-color: var(--secondaryButtonColor); */
+  background-image: linear-gradient(var(--secondaryButtonColor), var(--secondaryButtonColor)),
+    url("/assets/advocacyCentre.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.custom_sized_box {
+  width: var(--custom_width);
+  min-width: var(--custom_min_width);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.adCentre {
+  color: white;
+  font-size: 4.5em;
+}
+
+.adCentreDisc {
+  color: white;
+  font-size: 1.1em;
+  line-height: 140%;
+}
+
+app-rounded-button {
+  margin-top: 30px;
+}
+
+.aboutUs{
+  width: 100%;
+  margin: 25px 0px;
+  padding: 0;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 49%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 20;
+  inherits: false;
+}
+
+.counterRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.counter {
+  animation: counter 3s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 4em;
+  /* padding: 2rem; */
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 20;
+  }
+}
+
+.plusSign {
+  margin-left: 0px;
+  margin-bottom: 0;
+  animation: plus 3s;
+}
+
+@keyframes plus {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  25% {
+    visibility: visible;
+    opacity: 0.25;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  80% {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.abtUsTitle {
+  color: white;
+  background-color: var(--secondaryButtonColor);
+  width: 30%;
+  /* height: 12vh; */
+  /* padding-left: 1vw; */
+  padding: 25px 0;
+  text-align: center;
+  font-size: 4.5em;
+  line-height: 12vh;
+  margin: 0;
+}
+
+.years {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: var(--secondaryButtonColor);
+  /* margin-left: 3vw; */
+  padding: 2px 42px 2px 42px;
+  color: var(--secondaryButtonColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.years p {
+  font-size: 5em;
+  text-align: center;
+  /* line-height: 2px; */
+  font-weight: 800;
+  margin: 0;
+}
+
+.verLine{
+  /* width: 2%; */
+  border-left: 3px solid var(--secondaryButtonColor);
+  height: 400px;
+  border-radius: 2px;
+}
+
+.data {
+  margin: 0px 15px 0 50px;
+  width: 33vw;
+  font-size: 1.2em;
+  color: var(--secondaryButtonColor);
+  display: flex;
+  flex-direction: column;
+}
+
+.data > h2 {
+  margin-bottom: 10px;
+}
+
+.data > p {
+  margin-top: 0;
+  margin-bottom: 2px;
+  width: 80%;
+}
+a {
+  color: var(--blue_accent);
+  font-weight: 900;
+  text-decoration: none;
+}
+.moreSentence {
+  color: var(--blue_accent);
+  font-weight: 700;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .advocacyCentre {
+    height: auto;
+    min-height: 40%;
+    justify-content: start;
+    padding-top: 20px;
+  }
+  .adCentre {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .adCentreDisc {
+    font-size: 0.8em;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .custom_sized_box {
+    width: 100%;
+    min-height: 1px;
+    padding: 20px;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .flex-row {
+    width: auto;
+    margin-top: 20px;
+    padding: 0;
+    height: auto;
+  }
+
+  .abtUsTitle {
+    width: auto;
+    padding: 15px;
+    padding-left: 35%;
+    font-size: 2em;
+  }
+
+  .years {
+    padding: 10px 20px;
+    margin: 10px
+  }
+
+  .years p {
+    font-size: 1.7em;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .center {
+    width: auto;
+  }
+
+  .data {
+    width: 100%;
+    margin: 10px;
+    font-size: 0.8em;
+  }
+
+  .verLine {
+    height: 200px;
+  }
+
+  h2 {
+    width: auto;
+  }
+}
