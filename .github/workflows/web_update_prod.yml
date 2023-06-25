@@ -1,0 +1,22 @@
+name: prod autodep
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on production
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.WEB_HOST }}
+        username: ${{ secrets.WEB_USER }}
+        key: ${{ secrets.WEB_SECRET }}
+        port: ${{ secrets.WEB_PORT }}
+        script: |
+          cd /opt/website/
+          git log -1
+          git restore .
+          git pull
